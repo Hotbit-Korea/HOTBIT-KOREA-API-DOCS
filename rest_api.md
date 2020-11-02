@@ -51,7 +51,7 @@ Description of Interaction Request
 |[market.kline](#marketkline)|Check K Chart|https://api.hotbit.co.kr/api/v2/market.kline|market=ETH/BTC&start_time=1521100000&end_time=1521101193&interval=60 |
 |[market.status](#marketstatus)|Obtain latest market status within designated period in the past, such as latest range of increase and decline, transaction volume, highest/lowest price etc.|https://api.hotbit.co.kr/api/v2/market.status|market=ETH/BTC&period=10 |
 |[market.status_today](#marketstatus_today)|Obtain today's market status|https://api.hotbit.co.kr/api/v2/market.status_today|market=ETH/BTC |
-|[market.status24h](#marketstatus24h)|Obtain the market status within the previous 24 hours, such as range of increase and decline, transaction volume, highest and lowest price etc.|https://api.hotbit.co.kr/api/v2/market.status24h||
+|[market.statusall24h](#marketstatusall24h)|Obtain the market status within the previous 24 hours, such as range of increase and decline, transaction volume, highest and lowest price etc.|https://api.hotbit.co.kr/api/v2/market.statusall24h||
 |[market.summary](#marketsummary)|Market summary|https://api.hotbit.co.kr/api/v2/market.summary||
 |[allticker](#allticker)|Obtain the latest trading information of all transaction pairs|https://api.hotbit.co.kr/api/v2/allticker||
 
@@ -958,11 +958,11 @@ Response:
 
 
 
-### market.status24h
+### market.statusall24h
 
 | name of method           | type of method | description                                                        |
 | ---------------- | -------- | ----------------------------------------------------------- |
-| market.status24h | get      | Obtain the market status within the previous 24 hours, such as the range of increase and decline, trading volume, highest/lowest price etc. |
+| market.statusall24h | get      | Obtain the market status within the previous 24 hours, such as the range of increase and decline, trading volume, highest/lowest price etc. |
 
 Requested parameter: no
 
@@ -970,7 +970,7 @@ Example：
 
 | url                                           | body |
 | --------------------------------------------- | ---- |
-| https://api.hotbit.co.kr/api/v2/market.status24h |      |
+| https://api.hotbit.co.kr/api/v2/market.statusall24h |      |
 
 data responded：
 
